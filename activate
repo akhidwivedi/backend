@@ -1,0 +1,39 @@
+#!/bin/bash 
+
+mongod
+
+source /Users/a/data/terminal/jb/env/bin/activate
+
+cd /Users/a/data/terminal/jb/scm/api/
+
+git pull 
+
+git merge DevBranch
+
+git merge origin/DevBranch
+
+git pull origin DevBranch
+
+
+pip install -r /Users/a/data/terminal/jb/api/requirements.txt
+
+pip install -r requirements.txt
+
+#pip freeze > requirements.txt
+
+python /Users/a/data/terminal/jb/api/manage.py makemigrations
+
+python /Users/a/data/terminal/jb/api/manage.py migrate
+
+#subl /Users/a/data/terminal/jb/scm/api
+
+python /Users/a/data/terminal/jb/api/manage.py runserver 0.0.0.0:8000
+
+#cd /Users/a/data/terminal/jb/scm/api
+
+#subl /Users/a/data/terminal/jb/scm/api
+
+#mongod
+
+#pip freeze > requirements.txt
+

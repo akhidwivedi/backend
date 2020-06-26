@@ -1,0 +1,5 @@
+api/__pycache__/
+scm/__pycache__/
+api/migrations/
+scm/migrations/
+uploads/

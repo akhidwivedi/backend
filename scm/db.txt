@@ -1,0 +1,21 @@
+db.copyDatabase( "calculator", "calculator_copy", "localhost" )
+
+
+{
+    "_id": {
+        "$oid": "5ef32f2ff7fd0498bc4f5278"
+    },
+    "id": 1,
+    "password": "pbkdf2_sha256$150000$Mh2i870JpAq8$C5zz5Tsp0bIeWrCgBW8cxuySs7iEvd4DLjEZNQGV0Kk=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": {
+        "$date": "2020-06-24T10:47:11.447Z"
+    }
+}
