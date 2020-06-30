@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'k-0)0bbkazqb%$v#zhxsncb_d3++go6edg!kp_at5oi)+&!7ay'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [ '*']
+ALLOWED_HOSTS = ['scm-backend.herokuapp.com','127.0.0.1']
 
 #
 #ALLOWED_HOSTS = [ '10.0.0.20','10.0.0.20:3000','localhost','localhost:3000','localhost:8000',
